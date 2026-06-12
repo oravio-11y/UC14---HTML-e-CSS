@@ -1,0 +1,70 @@
+:root{
+--cor-primaria: rgb(57, 57, 57);
+--cor-secundaria: rgba(190, 0, 136, 0.558);
+--cor-fundo: rgb(80, 80, 80);
+--cor-texto: rgb(0, 0, 0);
+--cor-barnca: rgb(128, 128, 128);
+
+--fonte-principal: Arial, sans-serif;
+--borda-radius: 10px;
+--sombra: 0 4px 10px black;
+}
+
+.body{
+    margin: 0;
+    padding: 0;
+    font-family: var(--fonte-principal);
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.caixa{
+background-color: var(--cor-barnca);
+padding: 50px;
+border-radius: var(--borda-radius);
+box-shadow: var(--sombra);
+text-align: center;
+width: 500px;
+}
+
+h1{
+    color: var(--cor-primaria);
+}
+
+h2{
+    color: var(--cor-secundaria);
+}
+
+p{
+    color: var(--cor-texto);
+}
+
+button{
+    background-color: var(--cor-primaria);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: var(--borda-radius);
+    cursor: pointer;
+}
+   
+
+button:hover{
+    background-color: var(--cor-secundaria);
+
+}
+
+img{
+    width: 250px;
+    height: 150px;
+}
+
+button{
+    box-shadow: inset;
+}
+
