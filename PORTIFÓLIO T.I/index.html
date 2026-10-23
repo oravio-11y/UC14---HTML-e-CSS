@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>João Otávio | Meu Portfólio</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+
+    <header class="topo" id="inicio">
+        <div class="container cabecalho">
+
+            <a href="#inicio" class="logo">&lt;JO /&gt;</a>
+
+            <button id="menuBotao"
+                class="menu-botao"
+                type="button"
+                aria-label="Abrir menu"
+                aria-controls="menu"
+                aria-expanded="false">
+                ☰
+            </button>
+
+            <nav id="menu" class="menu" aria-label="Menu principal">
+                <a href="#inicio">Início</a>
+                <a href="#sobre">Sobre mim</a>
+                <a href="#habilidades">Habilidades</a>
+                <a href="#projetos">Projetos</a>
+                <a href="#contato">Contato</a>
+            </nav>
+
+            <button id="temaBotao"
+                class="tema-botao"
+                type="button"
+                aria-label="Ativar modo escuro">
+                ☾
+            </button>
+
+        </div>
+    </header>
+
+
+    <main>
+
+        <section class="inicio secao">
+            <div class="container inicio-conteudo">
+
+                <div class="inicio-texto">
+                    <p id="saudacao" class="destaque">
+                        Olá! Seja bem-vindo ao meu portfólio.
+                    </p>
+
+                    <h1>
+                        João Otávio
+                        <span>Desenvolvedor em formação.</span>
+                    </h1>
+
+                    <p>
+                        Sou estudante do Técnico em Desenvolvimento de Sistemas
+                        no SENAC MedTec. Estou aprendendo a criar sites com
+                        HTML, CSS e JavaScript. Ainda tenho bastante coisa
+                        pra aprender, mas gosto de testar ideias e ver o
+                        resultado funcionando.
+                    </p>
+
+                    <div class="botoes">
+                        <a href="#projetos" class="botao principal">
+                            Ver meus projetos
+                        </a>
+
+                        <a href="#sobre" class="botao secundario">
+                            Sobre mim
+                        </a>
+                    </div>
+                </div>
+
+                <img
+                src="7572100f-d629-4718-91cd-f788d17a5333.png"
+                alt="Foto de João Otávio usando roupa social"
+                class="foto-perfil">
+
+            </div>
+        </section>
+
+
+        <section class="secao" id="sobre">
+            <div class="container">
+
+                <div class="titulo-secao">
+                    <p class="destaque">Um pouco sobre mim</p>
+                    <h2>Quem sou eu?</h2>
+                </div>
+
+                <div class="sobre-cartao">
+                    <h3>Aprendendo na prática</h3>
+
+                    <p>
+                        Meu nome é João Otávio e tenho 15 anos. Estou no 1º ano do curso Técnico em Desenvolvimento de Sistemas no SENAC MedTec. Gosto de aprender coisas novas e colocar em prática o que aprendo.
+                    </p>
+
+                    <p>
+                      sou uma pessoa que gosta de desafios e de resolver problemas. Acredito que a prática é a melhor forma de aprender, por isso gosto de criar projetos e testar minhas ideias.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+
+        <section class="secao fundo-alternativo" id="habilidades">
+            <div class="container">
+
+                <div class="titulo-secao">
+                    <p class="destaque">O que estou estudando</p>
+                    <h2>Minhas habilidades</h2>
+                    <p>Essas são algumas coisas que venho aprendendo nas aulas.</p>
+                </div>
+
+                <div class="habilidades">
+
+                    <div class="habilidade">
+                        <h3>Amizade</h3>
+                        <p>
+                            Sou muito amigável e gosto de conhecer pessoas novas. Gosto de conversar e aprender com os outros.
+                        </p>
+                    </div>
+
+                    <div class="habilidade">
+                        <h3>Perseverança</h3>
+                        <p>
+                            Quando encontro dificuldades, não desisto facilmente. Tento entender os problemas e encontrar soluções.
+                        </p>
+                    </div>
+
+                    <div class="habilidade">
+                        <h3>Criatividade</h3>
+                        <p>
+                            Gosto de pensar em novas ideias e maneiras de fazer as coisas. Tento aplicar minha criatividade nos projetos que faço.
+                        </p>
+                    </div>
+
+                    <div class="habilidade">
+                        <h3>Liderança</h3>
+                        <p>
+                            Gosto de liderar projetos e ajudar os outros a alcançar seus objetivos. Acredito que o trabalho em equipe é fundamental para o sucesso.
+                        </p>
+
+
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <section class="secao" id="projetos">
+            <div class="container">
+
+                <div class="titulo-secao">
+                    <p class="destaque">Trabalhos das aulas</p>
+                    <h2>Meus projetos</h2>
+                    <p>
+                        Aqui estão alguns projetos que desenvolvi durante
+                        as atividades do curso.
+                    </p>
+                </div>
+
+                <div class="filtro">
+                    <label for="filtroTecnologia">Filtrar por tecnologia:</label>
+
+                    <select id="filtroTecnologia">
+                        <option value="">Todos os projetos</option>
+                        <option value="CARROS FIGMA">CARROS FIGMA</option>
+                        <option value="ROLETA DO SITE DA FEIRA">ROLETA DO SITE DA FEIRA</option>
+                        <option value="TABELA DE PREÇOS DE UMA LOJA VSCODE">TABELA DE PREÇOS DE UMA LOJA VSCODE</option>
+                    </select>
+                </div>
+
+                <div class="projetos" id="listaProjetos"></div>
+
+            </div>
+        </section>
+
+
+        <section class="secao fundo-alternativo" id="contato">
+            <div class="container">
+
+                <div class="titulo-secao">
+                    <p class="destaque">Vamos conversar</p>
+                    <h2>Entre em contato</h2>
+                    <p>
+                        Tem alguma sugestão ou ideia? Pode deixar uma mensagem.
+                    </p>
+                </div>
+
+                <div class="contato">
+
+                    <div class="contato-texto">
+                        <h3>Vamos trocar uma ideia?</h3>
+
+                        <p>
+                            Estou aprendendo cada vez mais sobre
+                            desenvolvimento web e quero colocar meus
+                            conhecimentos em prática.
+                        </p>
+
+                        <p>
+                            Quando tiver meus perfis profissionais prontos,
+                            vou adicionar aqui os links do GitHub e LinkedIn.
+                        </p>
+                    </div>
+
+
+                    <form id="formContato" class="formulario" novalidate>
+
+                        <div class="campo">
+                            <label for="nome">Nome</label>
+                            <input type="text" id="nome" name="nome"
+                                placeholder="Digite seu nome"
+                                autocomplete="name"
+                                aria-describedby="erroNome"
+                                required>
+                            <small id="erroNome" class="erro"></small>
+                        </div>
+
+                        <div class="campo">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email"
+                                placeholder="Digite seu e-mail"
+                                autocomplete="email"
+                                aria-describedby="erroEmail"
+                                required>
+                            <small id="erroEmail" class="erro"></small>
+                        </div>
+
+                        <div class="campo">
+                            <label for="mensagem">Mensagem</label>
+                            <textarea id="mensagem" name="mensagem"
+                                rows="5"
+                                placeholder="Escreva sua mensagem..."
+                                aria-describedby="erroMensagem"
+                                required></textarea>
+                            <small id="erroMensagem" class="erro"></small>
+                        </div>
+
+                        <div class="consentimento">
+                            <input type="checkbox" id="aceito" name="aceito"
+                                aria-describedby="erroAceito"
+                                required>
+
+                            <label for="aceito">
+                                Concordo com o uso dos dados somente para
+                                responder a esta mensagem.
+                            </label>
+                        </div>
+
+                        <small id="erroAceito" class="erro"></small>
+
+                        <p class="aviso">
+                            Este formulário é demonstrativo. Os dados não
+                            são enviados nem guardados pelo site.
+                        </p>
+
+                        <button class="botao principal" type="submit">
+                            Verificar mensagem
+                        </button>
+
+                        <p id="resultadoForm" role="status"
+                            aria-live="polite"></p>
+
+                    </form>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+    <footer class="rodape">
+        <div class="container rodape-conteudo">
+            <p>João Otávio | Minha Vitrine Dev</p>
+            <p>© <span id="ano"></span></p>
+            <a href="#inicio">Voltar ao topo ↑</a>
+        </div>
+    </footer>
+
+    <a href="#inicio" class="voltar-topo" id="voltarTopo"
+        aria-label="Voltar ao início">↑</a>
+
+</body>
+</html>
