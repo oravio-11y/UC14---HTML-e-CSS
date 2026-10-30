@@ -1,0 +1,180 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sistema de Consulta de Notas</title>
+
+    <!-- Conexão com o CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Conexão com o JavaScript -->
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <header class="cabecalho">
+        <div class="container">
+            <span class="identificacao">PORTAL ACADÊMICO</span>
+
+            <h1>Sistema de Consulta de Notas</h1>
+
+            <p>
+                Consulte o desempenho acadêmico do estudante
+                de maneira rápida e simples.
+            </p>
+        </div>
+    </header>
+
+    <main class="container conteudo">
+
+        <section class="cartao">
+
+            <div class="titulo-cartao">
+                <span class="icone">😮</span>
+
+                <div>
+                    <h2>Consulta do estudante</h2>
+                    <p>Preencha os campos abaixo para continuar.</p>
+                </div>
+            </div>
+
+            <form id="formularioNotas" novalidate>
+
+                <!-- Nome do estudante -->
+                <div class="campo">
+                    <label for="nome">Nome do estudante</label>
+
+                    <input
+                        type="text"
+                        id="nome"
+                        placeholder="Digite o nome completo"
+                        autocomplete="name"
+                        required
+                    >
+                </div>
+
+                <!-- Notas -->
+                <div class="grupo-notas">
+
+                    <div class="campo">
+                        <label for="nota1">Primeira nota</label>
+
+                        <input
+                            type="text"
+                            id="nota1"
+                            inputmode="decimal"
+                            placeholder="Ex.: 8,5"
+                            maxlength="10"
+                            required
+                        >
+                    </div>
+
+                    <div class="campo">
+                        <label for="nota2">Segunda nota</label>
+
+                        <input
+                            type="text"
+                            id="nota2"
+                            inputmode="decimal"
+                            placeholder="Ex.: 7,0"
+                            maxlength="10"
+                            required
+                        >
+                    </div>
+
+                    <div class="campo">
+                        <label for="nota3">Terceira nota</label>
+
+                        <input
+                            type="text"
+                            id="nota3"
+                            inputmode="decimal"
+                            placeholder="Ex.: 9,0"
+                            maxlength="10"
+                            required
+                        >
+                    </div>
+
+                </div>
+
+                <p class="ajuda">
+                    As notas devem ser informadas entre 0 e 10.
+                    Você pode utilizar vírgula ou ponto.
+                </p>
+
+                <!-- Mensagem de erro -->
+                <div
+                    id="mensagemErro"
+                    class="mensagem-erro"
+                    role="alert"
+                    hidden
+                ></div>
+
+                <!-- Botões -->
+                <div class="botoes">
+
+                    <button type="submit" class="botao-calcular">
+                        Calcular média
+                    </button>
+
+                    <button type="reset" class="botao-limpar">
+                        Limpar consulta
+                    </button>
+
+                </div>
+
+            </form>
+
+        </section>
+
+        <!-- Área dos resultados -->
+        <section
+            id="resultado"
+            class="resultado"
+            aria-live="polite"
+            aria-atomic="true"
+            hidden
+        >
+
+            <div class="resultado-cabecalho">
+
+                <div>
+                    <span class="identificacao-resultado">
+                        CONSULTA CONCLUÍDA
+                    </span>
+
+                    <h2 id="nomeResultado"></h2>
+                </div>
+
+                <span
+                    id="seloSituacao"
+                    class="selo-situacao"
+                ></span>
+
+            </div>
+
+            <div class="media-destaque">
+
+                <span>Média final</span>
+
+                <strong id="mediaResultado"></strong>
+
+            </div>
+
+            <p id="mensagemResultado" class="texto-resultado"></p>
+
+        </section>
+
+    </main>
+
+    <footer class="rodape">
+        <p>© 2026 — Sistema Acadêmico | Consulta de Notas</p>
+    </footer>
+
+</body>
+</html>
